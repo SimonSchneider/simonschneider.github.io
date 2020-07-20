@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>MonArch | My New Hugo Site</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="The vision of MonArch">
+  <meta name="keywords" content="monarch , development , javascript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.679ea46872c2b319c5ae942c601a7330924fd57451c89d621d6cb129c870c2a8.css" integrity="sha256-Z56kaHLCsxnFrpQsYBpzMJJP1XRRyJ1iHWyxKchwwqg="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/simonschneider.github.io\/"
+      },
+      "articleSection" : "blog",
+      "name" : "MonArch",
+      "headline" : "MonArch",
+      "description" : "The vision of MonArch",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-07-20 22:04:32 \u002b0200 CEST",
+      "dateModified" : "2020-07-20 22:04:32 \u002b0200 CEST",
+      "url" : "https:\/\/simonschneider.github.io\/blog\/monarch\/",
+      "wordCount" : "281",
+      "keywords" : ["monarch", "development", "javascript", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" role="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">MonArch</h1>
+            <time datetime="2020-07-20 22:04:32 &#43;0200 CEST" class="post__date"
+            >Jul 20 2020</time>
+          </header>
+          <article class="post__content">
+              
+<h2 id="problem-description-and-vision-of-monarch">Problem description and vision of MonArch<a class="anchor" href="#problem-description-and-vision-of-monarch">#</a></h2>
+<p>I&rsquo;ve long searched for a tool to visualize architecture, service-topology and monitoring in an intuitive way.</p>
+<p>An intuitive way in this case means from my point of view, visualizing the picture I have in my mind regarding service
+communication and data-flow.</p>
+<p>Architecture and or service-topology refers to what I would call &ldquo;domain/business logic architecture&rdquo; in microservices. Microservices
+inherently have a lot of data flowing between them as they are all working together to solve a larger business
+related problem. This data-flow consists two major building blocks, asynchronous and synchronous data-flow (think
+REST/GRPC APIs and event sourcing), both should be included as both are equally important. What I want to capture
+in the word architecture are these domain-/business-logic- data-flows. Things like Edge gateways, logging topics,
+monitoring collection and other orthogonal concerns to business logic are not relevant.</p>
+<p>Monitoring refers to visualize some core metrics of each service and event topic. The insights that we want to achieve
+are the following.</p>
+<ul>
+<li>how large data-flows are in terms of throughput in different parts of the service-topology</li>
+<li>how are the services keeping up with the events that they are consuming</li>
+<li>RED metrics for each service (this is combined with event lag to get a single state of the service healthy/degraded/critical)</li>
+</ul>
+<p>The main benefit of having this visualization is that it can show any loops in the architecture, bottlenecks,
+god-services and other issues. It is also a nice way to quickly get an overview of what services and event topics exist.
+This allows greater decision-making when deciding where to inject a new service and how to collect the relevant data
+for that service to do its job.</p>
+<h2 id="what-is-monarch">What is MonArch<a class="anchor" href="#what-is-monarch">#</a></h2>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/SimonSchneider"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://simonschneider.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/simon-schneider/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://simonschneider.github.io/svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+     
+</div>
+
+            <p>© 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
